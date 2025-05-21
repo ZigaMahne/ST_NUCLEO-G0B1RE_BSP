@@ -81,7 +81,6 @@
       <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1360-g0b1re-c02_schematic.pdf" title="Schematics"/>
       <book category="other"     name="Documents/README.md" title="Guide"/>
       <mountedDevice    deviceIndex="0" Dvendor="STMicroelectronics:13" Dname="STM32G0B1RETx"/>
-      <compatibleDevice deviceIndex="0" Dvendor="STMicroelectronics:13" DsubFamily="STM32G0B1"/>
       <feature type="ODbg"      n="1"              name="On-board ST-LINK/V2-1"/>
       <feature type="PWR"       n="4"              name="USB VBUS, ext. VIN, ext. 5V, ext +3.3V"/>
       <feature type="CustomFF"  n="2"              name="STMicroelectronics Morpho connector"/>
