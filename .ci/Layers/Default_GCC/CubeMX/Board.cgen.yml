@@ -1,5 +1,5 @@
 generator-import:
-  for-device: STM32G0B1RETx
+  for-device: STMicroelectronics::STM32G0B1RETx
   for-board: NUCLEO-G0B1RE
   define:
     - USE_HAL_DRIVER
@@ -38,7 +38,5 @@ generator-import:
         - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.c
         - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c
         - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c
-        - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.c
-        - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.c
         - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c
         - file: ./STM32CubeMX/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c

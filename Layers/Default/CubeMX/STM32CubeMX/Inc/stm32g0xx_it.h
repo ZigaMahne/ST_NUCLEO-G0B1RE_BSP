@@ -53,7 +53,6 @@ void EXTI2_3_IRQHandler(void);
 void EXTI4_15_IRQHandler(void);
 void TIM17_FDCAN_IT1_IRQHandler(void);
 void I2C1_IRQHandler(void);
-void SPI1_IRQHandler(void);
 void USART1_IRQHandler(void);
 void USART2_LPUART2_IRQHandler(void);
 /* USER CODE BEGIN EFP */

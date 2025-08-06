@@ -10,11 +10,21 @@ The **STMicroelectronics NUCLEO-G0B1RE Board Support Pack (BSP)**:
 
 - [Examples/Blinky](https://github.com/Open-CMSIS-Pack/ST_NUCLEO-G0B1RE_BSP/tree/main/Examples/Blinky) shows the basic usage of this board.
 
-- [Board Layer](https://github.com/Open-CMSIS-Pack/ST_NUCLEO-G0B1RE_BSP/tree/main/Layers/Default) for device-agnostic [Reference Applications](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/) that implements these API interfaces:
+- [Board Layer (with LD4)](https://github.com/Open-CMSIS-Pack/ST_NUCLEO-G0B1RE_BSP/tree/main/Layers/Default) for device-agnostic [Reference Applications](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/) that implements these API interfaces:
 
 | Provided API Interface        | Description
 |:------------------------------|:------------------------------------------------------------------------------
-| CMSIS_VIO                     | CMSIS-Driver VIO connected USER button (B1)
+| CMSIS_VIO                     | CMSIS-Driver VIO connected to LED (LD4) and USER button (B1)
+| STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN2)
+| ARDUINO_UNO_D2..D12, D14..D19 | CMSIS-Driver GPIO connected to Arduino digital I/O pins D2..D12 and D14..D19
+| ARDUINO_UNO_I2C               | CMSIS-Driver I2C connected to Arduino I2C pins D20..D21
+| ARDUINO_UNO_UART              | CMSIS-Driver USART connected to Arduino UART pins D0..D1
+
+- [Board Layer (with SPI1)](https://github.com/Open-CMSIS-Pack/ST_NUCLEO-G0B1RE_BSP/tree/main/Layers/Default) for device-agnostic [Reference Applications](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/) that implements these API interfaces:
+
+| Provided API Interface        | Description
+|:------------------------------|:------------------------------------------------------------------------------
+| CMSIS_VIO                     | CMSIS-Driver VIO connected to USER button (B1)
 | STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN2)
 | ARDUINO_UNO_D2..D10, D14..D19 | CMSIS-Driver GPIO connected to Arduino digital I/O pins D2..D10 and D14..D19
 | ARDUINO_UNO_I2C               | CMSIS-Driver I2C connected to Arduino I2C pins D20..D21
